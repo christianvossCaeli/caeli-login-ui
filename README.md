@@ -6,9 +6,9 @@ Shared login page components for Caeli tools.
 
 | Package | Description |
 |---------|-------------|
-| `@christianvossCaeli/login-styles` | CSS styles and design tokens |
-| `@christianvossCaeli/login-react` | React components for Next.js |
-| `@christianvossCaeli/login-vue` | Vue 3 components |
+| `@christianvosscaeli/login-styles` | CSS styles and design tokens |
+| `@christianvosscaeli/login-react` | React components for Next.js |
+| `@christianvosscaeli/login-vue` | Vue 3 components |
 
 ## Installation
 
@@ -18,19 +18,19 @@ Add the GitHub Packages registry to your project:
 
 ```bash
 # .npmrc
-@christianvossCaeli:registry=https://npm.pkg.github.com
+@christianvosscaeli:registry=https://npm.pkg.github.com
 ```
 
 ### React/Next.js
 
 ```bash
-pnpm add @christianvossCaeli/login-react @christianvossCaeli/login-styles
+pnpm add @christianvosscaeli/login-react @christianvosscaeli/login-styles
 ```
 
 ### Vue 3
 
 ```bash
-npm install @christianvossCaeli/login-vue @christianvossCaeli/login-styles
+npm install @christianvosscaeli/login-vue @christianvosscaeli/login-styles
 ```
 
 ## Usage
@@ -39,8 +39,8 @@ npm install @christianvossCaeli/login-vue @christianvossCaeli/login-styles
 
 ```tsx
 // app/(auth)/layout.tsx
-import { LoginLayout } from '@christianvossCaeli/login-react';
-import '@christianvossCaeli/login-styles';
+import { LoginLayout } from '@christianvosscaeli/login-react';
+import '@christianvosscaeli/login-styles';
 
 export default function AuthLayout({ children }) {
   return (
@@ -59,8 +59,8 @@ export default function AuthLayout({ children }) {
 
 ```vue
 <script setup lang="ts">
-import { LoginLayout } from '@christianvossCaeli/login-vue';
-import '@christianvossCaeli/login-styles';
+import { LoginLayout } from '@christianvosscaeli/login-vue';
+import '@christianvosscaeli/login-styles';
 </script>
 
 <template>

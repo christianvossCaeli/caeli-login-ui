@@ -1,5 +1,5 @@
 {
-  "name": "@christianvossCaeli/login-vue",
+  "name": "@christianvosscaeli/login-vue",
   "version": "1.0.0",
   "description": "Vue 3 components for Caeli login pages",
   "author": "Caeli Wind",
@@ -23,7 +23,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@christianvossCaeli/login-styles": "workspace:*"
+    "@christianvosscaeli/login-styles": "workspace:*"
   },
   "peerDependencies": {
     "vue": ">=3.3.0"

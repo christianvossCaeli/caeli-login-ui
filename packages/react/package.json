@@ -1,5 +1,5 @@
 {
-  "name": "@christianvossCaeli/login-react",
+  "name": "@christianvosscaeli/login-react",
   "version": "1.0.0",
   "description": "React components for Caeli login pages",
   "author": "Caeli Wind",
@@ -23,7 +23,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@christianvossCaeli/login-styles": "workspace:*"
+    "@christianvosscaeli/login-styles": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

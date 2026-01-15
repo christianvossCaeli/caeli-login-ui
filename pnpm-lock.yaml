@@ -14,7 +14,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@caeli-wind/login-styles':
+      '@christianvosscaeli/login-styles':
         specifier: workspace:*
         version: link:../styles
       react:
@@ -48,7 +48,7 @@ importers:
 
   packages/vue:
     dependencies:
-      '@caeli-wind/login-styles':
+      '@christianvosscaeli/login-styles':
         specifier: workspace:*
         version: link:../styles
       vue:

@@ -1,0 +1,20 @@
+/**
+ * @caeli-wind/login-styles
+ * Shared CSS styles for Caeli login pages
+ *
+ * Usage:
+ *   import '@caeli-wind/login-styles';
+ *   // or for specific modules:
+ *   import '@caeli-wind/login-styles/variables';
+ *
+ * @version 1.0.0
+ * @author Caeli Wind
+ * @license MIT
+ */
+
+@import './variables.css';
+@import './animations.css';
+@import './layout.css';
+@import './spinner.css';
+@import './card.css';
+@import './form.css';

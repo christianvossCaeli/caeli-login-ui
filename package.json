@@ -1,0 +1,23 @@
+{
+  "name": "caeli-login-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared login UI components for Caeli tools",
+  "author": "Caeli Wind",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "clean": "pnpm -r clean",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

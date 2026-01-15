@@ -1,0 +1,144 @@
+/**
+ * @caeli-wind/login-styles - Form
+ * Input, button, and form element styles
+ */
+
+/* Input Group */
+.input-group {
+  margin-bottom: var(--caeli-spacing-xl);
+}
+
+.input-label {
+  display: block;
+  font-size: var(--caeli-font-size-sm);
+  font-weight: var(--caeli-font-weight-medium);
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--caeli-spacing-sm);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: var(--caeli-spacing-lg);
+  width: var(--caeli-icon-size);
+  height: var(--caeli-icon-size);
+  color: var(--caeli-text-muted);
+  pointer-events: none;
+}
+
+/* Custom Input */
+.custom-input {
+  width: 100%;
+  height: var(--caeli-input-height);
+  padding: 0 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--caeli-border-light);
+  border-radius: var(--caeli-radius-input);
+  color: var(--caeli-text-primary);
+  font-size: var(--caeli-font-size-base);
+  outline: none;
+  transition: all var(--caeli-transition-normal);
+}
+
+.custom-input::placeholder {
+  color: var(--caeli-text-hint);
+}
+
+.custom-input:focus {
+  border-color: var(--caeli-border-focus);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(222, 238, 198, 0.1);
+}
+
+.custom-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Input Error */
+.input-error {
+  font-size: var(--caeli-font-size-xs);
+  color: var(--caeli-error);
+  margin-top: var(--caeli-spacing-sm);
+}
+
+/* Password Toggle */
+.password-toggle {
+  position: absolute;
+  right: var(--caeli-spacing-md);
+  background: none;
+  border: none;
+  color: var(--caeli-text-muted);
+  cursor: pointer;
+  padding: var(--caeli-spacing-sm);
+  border-radius: var(--caeli-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--caeli-transition-fast);
+}
+
+.password-toggle:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  height: var(--caeli-button-height);
+  background: linear-gradient(135deg, var(--caeli-tertiary) 0%, var(--caeli-tertiary-dark) 100%);
+  border: none;
+  border-radius: var(--caeli-radius-button);
+  color: var(--caeli-text-primary);
+  font-size: var(--caeli-font-size-md);
+  font-weight: var(--caeli-font-weight-semibold);
+  cursor: pointer;
+  transition: all var(--caeli-transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(146, 160, 255, 0.4);
+}
+
+.login-button:not(:disabled):active {
+  transform: translateY(0);
+}
+
+.login-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--caeli-spacing-sm);
+}
+
+/* Register/Login Link */
+.register-link {
+  text-align: center;
+  margin-top: var(--caeli-spacing-xl);
+  font-size: var(--caeli-font-size-base);
+  color: var(--caeli-text-muted);
+}
+
+.register-link a {
+  color: var(--caeli-tertiary);
+  text-decoration: none;
+  transition: color var(--caeli-transition-fast);
+}
+
+.register-link a:hover {
+  color: #b8c0ff;
+}

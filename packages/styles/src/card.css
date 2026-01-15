@@ -1,0 +1,32 @@
+/**
+ * @caeli-wind/login-styles - Card
+ * Login card glassmorphism styles
+ */
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  padding: var(--caeli-spacing-3xl);
+  background: var(--caeli-bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: var(--caeli-radius-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all var(--caeli-transition-slow) 0.4s;
+}
+
+.login-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    padding: var(--caeli-spacing-2xl);
+    border-radius: 20px;
+  }
+}

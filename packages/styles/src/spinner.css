@@ -1,0 +1,153 @@
+/**
+ * @caeli-wind/login-styles - Spinner
+ * Caeli logo spinner and glow ring styles
+ */
+
+/* Logo Section */
+.logo-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+  transition: all var(--caeli-transition-bounce);
+}
+
+.logo-section.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Glow Rings */
+.glow-rings {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glow-ring {
+  position: absolute;
+  border-radius: var(--caeli-radius-full);
+  border: 1px solid;
+  animation: caeli-ring-pulse 3s ease-in-out infinite;
+  background: transparent;
+  box-shadow: none;
+}
+
+.glow-ring.ring-1 {
+  width: var(--caeli-ring-1-size);
+  height: var(--caeli-ring-1-size);
+  border-color: var(--caeli-glow-secondary);
+  animation-delay: 0s;
+}
+
+.glow-ring.ring-2 {
+  width: var(--caeli-ring-2-size);
+  height: var(--caeli-ring-2-size);
+  border-color: var(--caeli-glow-secondary-light);
+  animation-delay: 0.3s;
+}
+
+.glow-ring.ring-3 {
+  width: var(--caeli-ring-3-size);
+  height: var(--caeli-ring-3-size);
+  border-color: var(--caeli-glow-tertiary);
+  animation-delay: 0.6s;
+}
+
+/* Spinner Container */
+.spinner-container {
+  position: relative;
+  width: var(--caeli-spinner-container-size);
+  height: var(--caeli-spinner-container-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-glow {
+  position: absolute;
+  width: var(--caeli-glow-size);
+  height: var(--caeli-glow-size);
+  background: radial-gradient(circle, rgba(222, 238, 198, 0.28) 0%, transparent 70%);
+  filter: blur(15px);
+  border-radius: var(--caeli-radius-full);
+  animation: caeli-pulse-glow 2s ease-in-out infinite;
+}
+
+.glass-circle {
+  position: absolute;
+  width: var(--caeli-glass-circle-size);
+  height: var(--caeli-glass-circle-size);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--caeli-radius-full);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.caeli-spinner {
+  position: relative;
+  z-index: var(--caeli-z-spinner);
+  animation: caeli-breathing 2s ease-in-out infinite;
+}
+
+.spinner-ray {
+  transform-origin: center;
+}
+
+/* Title Section */
+.title-section {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--caeli-transition-slow) 0.2s;
+}
+
+.title-section.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.app-title {
+  font-size: var(--caeli-font-size-xl);
+  font-weight: var(--caeli-font-weight-bold);
+  letter-spacing: var(--caeli-tracking-wider);
+  margin: 0;
+  background: linear-gradient(90deg, var(--caeli-secondary) 0%, var(--caeli-tertiary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-subtitle {
+  display: block;
+  font-size: var(--caeli-font-size-base);
+  font-weight: var(--caeli-font-weight-medium);
+  letter-spacing: var(--caeli-tracking-normal);
+  color: var(--caeli-text-secondary);
+  margin-top: var(--caeli-spacing-xs);
+}
+
+.app-description {
+  font-size: var(--caeli-font-size-base);
+  color: var(--caeli-text-muted);
+  margin-top: var(--caeli-spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .app-title {
+    font-size: var(--caeli-font-size-lg);
+    letter-spacing: var(--caeli-tracking-wide);
+  }
+
+  .app-subtitle {
+    font-size: var(--caeli-font-size-xs);
+    letter-spacing: var(--caeli-tracking-tight);
+  }
+}

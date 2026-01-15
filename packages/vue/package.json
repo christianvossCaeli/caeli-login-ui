@@ -1,0 +1,46 @@
+{
+  "name": "@caeli-wind/login-vue",
+  "version": "1.0.0",
+  "description": "Vue 3 components for Caeli login pages",
+  "author": "Caeli Wind",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc && vite build",
+    "clean": "rm -rf dist",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@caeli-wind/login-styles": "workspace:*"
+  },
+  "peerDependencies": {
+    "vue": ">=3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.3.0",
+    "vue-tsc": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caeli-wind/caeli-login-ui.git",
+    "directory": "packages/vue"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

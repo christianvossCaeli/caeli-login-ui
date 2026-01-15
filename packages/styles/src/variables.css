@@ -1,0 +1,98 @@
+/**
+ * @caeli-wind/login-styles - CSS Custom Properties
+ * Design tokens for Caeli login pages
+ */
+
+:root {
+  /* Primary Colors */
+  --caeli-primary: #113634;
+  --caeli-primary-light: #1a4a47;
+  --caeli-secondary: #deeec6;
+  --caeli-tertiary: #92a0ff;
+  --caeli-tertiary-dark: #7986cb;
+
+  /* Background Colors */
+  --caeli-bg-dark: #0a1f1e;
+  --caeli-bg-medium: #113634;
+  --caeli-bg-light: #0d1f1e;
+  --caeli-bg-card: rgba(20, 41, 40, 0.8);
+
+  /* Text Colors */
+  --caeli-text-primary: #ffffff;
+  --caeli-text-secondary: rgba(255, 255, 255, 0.7);
+  --caeli-text-muted: rgba(255, 255, 255, 0.5);
+  --caeli-text-hint: rgba(255, 255, 255, 0.4);
+
+  /* Border Colors */
+  --caeli-border-light: rgba(255, 255, 255, 0.15);
+  --caeli-border-focus: rgba(222, 238, 198, 0.5);
+
+  /* Glow Colors */
+  --caeli-glow-secondary: rgba(222, 238, 198, 0.3);
+  --caeli-glow-secondary-light: rgba(222, 238, 198, 0.2);
+  --caeli-glow-tertiary: rgba(146, 160, 255, 0.15);
+  --caeli-glow-tertiary-light: rgba(146, 160, 255, 0.1);
+
+  /* Error Color */
+  --caeli-error: #ff6b7a;
+
+  /* Spacing */
+  --caeli-spacing-xs: 4px;
+  --caeli-spacing-sm: 8px;
+  --caeli-spacing-md: 12px;
+  --caeli-spacing-lg: 16px;
+  --caeli-spacing-xl: 20px;
+  --caeli-spacing-2xl: 24px;
+  --caeli-spacing-3xl: 32px;
+
+  /* Border Radius */
+  --caeli-radius-card: 24px;
+  --caeli-radius-input: 24px;
+  --caeli-radius-button: 26px;
+  --caeli-radius-full: 50%;
+
+  /* Typography */
+  --caeli-font-size-xs: 12px;
+  --caeli-font-size-sm: 13px;
+  --caeli-font-size-base: 14px;
+  --caeli-font-size-md: 15px;
+  --caeli-font-size-lg: 32px;
+  --caeli-font-size-xl: 40px;
+
+  /* Font Weights */
+  --caeli-font-weight-normal: 400;
+  --caeli-font-weight-medium: 500;
+  --caeli-font-weight-semibold: 600;
+  --caeli-font-weight-bold: 700;
+
+  /* Letter Spacing */
+  --caeli-tracking-tight: 5px;
+  --caeli-tracking-normal: 6px;
+  --caeli-tracking-wide: 8px;
+  --caeli-tracking-wider: 10px;
+
+  /* Transitions */
+  --caeli-transition-fast: 0.2s ease;
+  --caeli-transition-normal: 0.3s ease;
+  --caeli-transition-slow: 0.6s ease-out;
+  --caeli-transition-bounce: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Z-indexes */
+  --caeli-z-background: 0;
+  --caeli-z-content: 1;
+  --caeli-z-spinner: 1;
+
+  /* Sizes */
+  --caeli-input-height: 48px;
+  --caeli-button-height: 52px;
+  --caeli-icon-size: 18px;
+  --caeli-spinner-size: 70px;
+  --caeli-spinner-container-size: 126px;
+  --caeli-glass-circle-size: 98px;
+  --caeli-glow-size: 112px;
+
+  /* Ring Sizes */
+  --caeli-ring-1-size: 140px;
+  --caeli-ring-2-size: 170px;
+  --caeli-ring-3-size: 200px;
+}

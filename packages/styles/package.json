@@ -1,0 +1,34 @@
+{
+  "name": "@caeli-wind/login-styles",
+  "version": "1.0.0",
+  "description": "Shared CSS styles for Caeli login pages",
+  "author": "Caeli Wind",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.css",
+  "exports": {
+    ".": "./dist/index.css",
+    "./variables": "./dist/variables.css",
+    "./animations": "./dist/animations.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.0",
+    "postcss": "^8.5.0",
+    "postcss-import": "^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caeli-wind/caeli-login-ui.git",
+    "directory": "packages/styles"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

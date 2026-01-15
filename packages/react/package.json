@@ -1,5 +1,5 @@
 {
-  "name": "@caeli-wind/login-react",
+  "name": "@christianvossCaeli/login-react",
   "version": "1.0.0",
   "description": "React components for Caeli login pages",
   "author": "Caeli Wind",
@@ -23,7 +23,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@caeli-wind/login-styles": "workspace:*"
+    "@christianvossCaeli/login-styles": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/caeli-wind/caeli-login-ui.git",
+    "url": "https://github.com/christianvossCaeli/caeli-login-ui.git",
     "directory": "packages/react"
   },
   "publishConfig": {

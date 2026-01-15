@@ -1,5 +1,5 @@
 {
-  "name": "@caeli-wind/login-vue",
+  "name": "@christianvossCaeli/login-vue",
   "version": "1.0.0",
   "description": "Vue 3 components for Caeli login pages",
   "author": "Caeli Wind",
@@ -23,7 +23,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@caeli-wind/login-styles": "workspace:*"
+    "@christianvossCaeli/login-styles": "workspace:*"
   },
   "peerDependencies": {
     "vue": ">=3.3.0"
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/caeli-wind/caeli-login-ui.git",
+    "url": "https://github.com/christianvossCaeli/caeli-login-ui.git",
     "directory": "packages/vue"
   },
   "publishConfig": {

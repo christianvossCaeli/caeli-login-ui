@@ -30,10 +30,27 @@ export { LoginLayout } from './LoginLayout';
 export { CaeliSpinner } from './CaeliSpinner';
 export { FloatingParticles } from './FloatingParticles';
 
+// Auth / SSO
+export { AuthContainer } from './AuthContainer';
+export { SsoDivider } from './SsoDivider';
+export { MicrosoftSsoButton } from './auth/MicrosoftSsoButton';
+export { useMicrosoftAuth } from './auth/useMicrosoftAuth';
+
 // Types
 export type {
   LoginLayoutProps,
   CaeliSpinnerProps,
   FloatingParticlesProps,
   Particle,
+  AuthContainerProps,
+  AuthContainerMode,
+  SsoDividerProps,
 } from './types';
+
+export type {
+  MsalConfig,
+  MicrosoftSsoButtonProps,
+  MicrosoftAccount,
+  MicrosoftAuthState,
+  UseMicrosoftAuthReturn,
+} from './auth/types';

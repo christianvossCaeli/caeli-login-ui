@@ -30,10 +30,27 @@ export { default as LoginLayout } from './LoginLayout.vue';
 export { default as CaeliSpinner } from './CaeliSpinner.vue';
 export { default as FloatingParticles } from './FloatingParticles.vue';
 
+// Auth / SSO
+export { default as AuthContainer } from './AuthContainer.vue';
+export { default as SsoDivider } from './SsoDivider.vue';
+export { default as MicrosoftSsoButton } from './auth/MicrosoftSsoButton.vue';
+export { useMicrosoftAuth } from './auth/useMicrosoftAuth';
+
 // Types
 export type {
   LoginLayoutProps,
   CaeliSpinnerProps,
   FloatingParticlesProps,
   Particle,
+  AuthContainerProps,
+  AuthContainerMode,
+  SsoDividerProps,
 } from './types';
+
+export type {
+  MsalConfig,
+  MicrosoftSsoButtonProps,
+  MicrosoftAccount,
+  MicrosoftAuthState,
+  UseMicrosoftAuthReturn,
+} from './auth/types';

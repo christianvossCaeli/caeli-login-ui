@@ -1,0 +1,39 @@
+/**
+ * @caeli-wind/login-styles - Auth Container
+ * Layout component for credentials, SSO, or combined authentication flows
+ */
+
+/* Auth Container — base */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--caeli-spacing-xl);
+  width: 100%;
+}
+
+/* SSO-only: tighter gap, centered content */
+.auth-container--sso {
+  gap: var(--caeli-spacing-lg);
+  align-items: center;
+  text-align: center;
+}
+
+/* Combined mode: gap handled by SsoDivider */
+.auth-container--both {
+  gap: 0;
+}
+
+/* Title */
+.auth-container__title {
+  font-size: var(--caeli-font-size-md);
+  font-weight: var(--caeli-font-weight-semibold);
+  color: var(--caeli-text-primary);
+  margin: 0;
+}
+
+/* Description */
+.auth-container__description {
+  font-size: var(--caeli-font-size-sm);
+  color: var(--caeli-text-secondary);
+  margin: 0;
+}

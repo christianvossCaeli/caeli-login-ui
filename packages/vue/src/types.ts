@@ -32,6 +32,38 @@ export interface CaeliSpinnerProps {
 /**
  * Props for LoginLayout component
  */
+/**
+ * Auth container mode
+ */
+export type AuthContainerMode = 'credentials' | 'sso' | 'both';
+
+/**
+ * Props for AuthContainer component
+ */
+export interface AuthContainerProps {
+  /** Layout mode — controls spacing and alignment */
+  mode?: AuthContainerMode;
+  /** Optional heading rendered above content */
+  title?: string;
+  /** Optional description rendered below the title */
+  description?: string;
+  /** Custom class name */
+  className?: string;
+}
+
+/**
+ * Props for SsoDivider component
+ */
+export interface SsoDividerProps {
+  /** Divider label text (default: "or") */
+  text?: string;
+  /** Custom class name */
+  className?: string;
+}
+
+/**
+ * Props for LoginLayout component
+ */
 export interface LoginLayoutProps {
   /** Main title displayed with gradient (default: "CAELI") */
   appTitle?: string;

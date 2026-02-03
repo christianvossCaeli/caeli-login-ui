@@ -19,7 +19,7 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['vue', '@caeli-wind/login-styles'],
+      external: ['vue', '@caeli-wind/login-styles', '@azure/msal-browser'],
       output: {
         globals: {
           vue: 'Vue',

@@ -9,7 +9,9 @@
   "exports": {
     ".": "./dist/index.css",
     "./variables": "./dist/variables.css",
-    "./animations": "./dist/animations.css"
+    "./animations": "./dist/animations.css",
+    "./sso": "./dist/sso.css",
+    "./auth": "./dist/auth.css"
   },
   "files": [
     "dist"

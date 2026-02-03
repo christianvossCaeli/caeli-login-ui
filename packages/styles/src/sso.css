@@ -1,0 +1,129 @@
+/**
+ * @caeli-wind/login-styles - SSO
+ * Single Sign-On button and divider styles
+ */
+
+/* SSO Divider */
+.sso-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--caeli-spacing-lg);
+  margin: var(--caeli-spacing-xl) 0;
+}
+
+.sso-divider::before,
+.sso-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--caeli-border-light);
+}
+
+.sso-divider__text {
+  font-size: var(--caeli-font-size-sm);
+  color: var(--caeli-text-muted);
+  white-space: nowrap;
+}
+
+/* SSO Button Base */
+.sso-button {
+  width: 100%;
+  height: var(--caeli-button-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--caeli-spacing-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--caeli-border-light);
+  border-radius: var(--caeli-radius-button);
+  color: var(--caeli-text-primary);
+  font-family: inherit;
+  font-size: var(--caeli-font-size-md);
+  font-weight: var(--caeli-font-weight-medium);
+  cursor: pointer;
+  transition: all var(--caeli-transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.sso-button:focus-visible {
+  outline: 2px solid var(--caeli-border-focus);
+  outline-offset: 2px;
+}
+
+.sso-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.sso-button:not(:disabled):active {
+  transform: translateY(0);
+}
+
+.sso-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* SSO Button Elements */
+.sso-button__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.sso-button__label {
+  white-space: nowrap;
+}
+
+.sso-button__spinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: inherit;
+}
+
+.sso-button__spinner::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: var(--caeli-text-primary);
+  border-radius: var(--caeli-radius-full);
+  animation: sso-spin 0.6s linear infinite;
+}
+
+@keyframes sso-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Microsoft Variant */
+.sso-button--microsoft:not(:disabled):hover {
+  border-color: rgba(0, 120, 212, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 120, 212, 0.2);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .sso-button__spinner::after {
+    animation-duration: 1.5s;
+  }
+
+  .sso-button:not(:disabled):hover {
+    transform: none;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .sso-button {
+    height: 48px;
+    font-size: var(--caeli-font-size-base);
+  }
+}

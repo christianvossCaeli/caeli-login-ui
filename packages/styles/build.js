@@ -58,6 +58,16 @@ async function build() {
   await fs.writeFile(path.join(distDir, 'animations.css'), animationsCss);
   console.log('  -> dist/animations.css');
 
+  // Copy sso.css separately
+  const ssoCss = await fs.readFile(path.join(srcDir, 'sso.css'), 'utf8');
+  await fs.writeFile(path.join(distDir, 'sso.css'), ssoCss);
+  console.log('  -> dist/sso.css');
+
+  // Copy auth.css separately
+  const authCss = await fs.readFile(path.join(srcDir, 'auth.css'), 'utf8');
+  await fs.writeFile(path.join(distDir, 'auth.css'), authCss);
+  console.log('  -> dist/auth.css');
+
   console.log('Build complete!');
 }
 
